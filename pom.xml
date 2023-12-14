@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.11</version>
+		<version>3.1.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.rocketseat</groupId>
-	<artifactId>ToDo</artifactId>
+	<artifactId>todolist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ToDo</name>
-	<description>ToDo project for Spring Boot</description>
+	<name>todolist</name>
+	<description>ToDo list</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -34,6 +34,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
+					</image>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

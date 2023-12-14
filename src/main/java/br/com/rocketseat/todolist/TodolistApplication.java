@@ -1,13 +1,13 @@
-package br.com.rocketseat.ToDo;
+package br.com.rocketseat.todolist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ToDoApplication {
+public class TodolistApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ToDoApplication.class, args);
+		SpringApplication.run(TodolistApplication.class, args);
 	}
 
 }
